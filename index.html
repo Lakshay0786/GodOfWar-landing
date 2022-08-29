@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOD OF WAR</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/img/kratos.png" />
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="circle"></div>
+      <nav class="navbar">
+        <div class="logodiv">
+          <img src="./img/logo.png" class="logo" alt="website logo" />
+        </div>
+        <ul class="list">
+          <li class="item">
+            <a
+              href="#"
+              class="item"
+              onclick="imgSlider('./img/kratos-son.png');changecircleColor('#017143') ; changeheading('Kratos','#017143')"
+              >Kratos</a
+            >
+          </li>
+            
+          </li>
+          <li class="item">
+            <a
+              href="#"
+              onclick="imgSlider('./img/monoster.png');changecircleColor('#017143') ; changeheading('Hercules','#017143')"
+              >Hercules
+            </a>
+          </li>
+          <li class="item"><a href="#" onclick="imgSlider('./img/son.png');changecircleColor('#d752b1');changeheading('Artemis','#d752b1')"
+            >Artemis</a></li>
+          <li class="item"><a href="# "onclick="imgSlider('./img/pngwing.com.png');changecircleColor('#d752b1');changeheading('Poseidon','#d752b1')"
+            >Poseidon</a></li>
+        </ul>
+      </nav>
+      <div class="textbox">
+        <div class="textcontent">
+          <h1 class="head">Kratos</h1>
+          <p>
+            I Killed Many Who Were Deserving...And Many Who Were Not." - God Of
+            War PS4
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="mainimg">
+          <img src="./img/kratos-son.png" class="centerimg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="middle-container"></div>
+    <div class="bottom-container"></div> -->
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".centerimg").src = anything;
+        console.log('click')
+      }
+
+      function changecircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+
+      function changeheading(headline,color2){
+        var final = document.querySelector('.head');
+        final.style.color = color2;
+        final.innerHTML = headline;
+      }
+    </script>
+  </body>
+</html>
